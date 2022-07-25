@@ -1,0 +1,5 @@
+make --dry-run --always-make --keep-going --print-directory
+make: Entering directory `/Users/shouzezhen/Documents/PlatformIO/Projects/ESP32_Air-Sensor'
+pio -f -c vim run
+make: Leaving directory `/Users/shouzezhen/Documents/PlatformIO/Projects/ESP32_Air-Sensor'
+ 
