@@ -6,8 +6,9 @@ make all --print-data-base --no-builtin-variables --no-builtin-rules --question
 # PARTICULAR PURPOSE.
 
 # This program built for i386-apple-darwin11.3.0
+ 
 
-# Make data base, printed on Mon Jul 25 01:28:47 2022
+# Make data base, printed on Wed Jul 27 12:03:24 2022
 
 # Variables
 
@@ -48,7 +49,7 @@ ELECTRON_RUN_AS_NODE = 1
 # default
 .FEATURES := target-specific order-only second-expansion else-if archives jobserver check-symlink
 # environment
-SSH_AUTH_SOCK = /private/tmp/com.apple.launchd.9Bb1VojTy3/Listeners
+SSH_AUTH_SOCK = /private/tmp/com.apple.launchd.056JbkSuNB/Listeners
 # automatic
 %F = $(notdir $%)
 # environment
@@ -156,7 +157,7 @@ http_proxy = http://127.0.0.1:8889
 # environment
 LANG = C
 # environment
-VSCODE_PID = 20865
+VSCODE_PID = 3826
 # variable set hash-table stats:
 # Load=73/1024=7%, Rehash=0, Collisions=3/99=3%
 
@@ -166,9 +167,9 @@ VSCODE_PID = 20865
 
 # Directories
 
-# . (device 16777231, inode 43569412): 13 files, no impossibilities.
+# . (device 16777229, inode 43569412): 14 files, no impossibilities.
 
-# 13 files, no impossibilities in 1 directories.
+# 14 files, no impossibilities in 1 directories.
 
 # Implicit Rules
 
@@ -287,6 +288,6 @@ upload:
 # strcache size: total = 4096 / max = 4096 / min = 4096 / avg = 4096
 # strcache free: total = 4087 / max = 4087 / min = 4087 / avg = 4087
 
-# Finished Make data base on Mon Jul 25 01:28:47 2022
+# Finished Make data base on Wed Jul 27 12:03:24 2022
 
  
