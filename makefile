@@ -19,5 +19,5 @@ uploadfs:
 update:
 	pio -f -c vim update
 
-make and monitor :
-	platformio run --target upload --target monitor
+develop:
+	pio -f -c vim run --target upload --target monitor
