@@ -79,18 +79,19 @@ void Air_Sensor_loop()
     if (millis() - Act_Time >= Act_Time_Interval)
     {
         Air_Sensor();
-        Serial.println("Air_Sensor");
+        // Serial.println("Air_Sensor");
     }
-    else
-    {
-        Serial.println("----------------------------------");
-    }
+    // else if (millis() - Act_Time < Act_Time_Interval)
+    // {
+    
+    // }
+    
 }
 
 void Get_Air_Sensor(String TaskNumber)
 {
     prefs.begin("storage");
-    Serial.println("<" + String(TaskNumber) + "," + String(prefs.getString("Role", "0")) + "," + String(temp) + "," + String(humidity) + "," + String(tvoc) + "," + String(eco2) + "," + String(pm10) + "," + String(pm25) + "," + String(pm100) + "," + String(particles_03um) + "," + String(particles_05um) + "," + String(particles_10um) + "," + String(particles_25um) + "," + String(particles_50um) + "," + String(particles_100um) + "," + String(ch2o) + "Get_Sensor>");
+    Serial.println("<" + String(TaskNumber) + "," + String(prefs.getString("Role", "0")) + "," + String(temp) + "," + String(humidity) + "," + String(tvoc) + "," + String(eco2) + "," + String(pm10) + "," + String(pm25) + "," + String(pm100) + "," + String(particles_03um) + "," + String(particles_05um) + "," + String(particles_10um) + "," + String(particles_25um) + "," + String(particles_50um) + "," + String(particles_100um) + "," + String(ch2o) + ",Get_Sensor>");
     prefs.end();
-    Air_Sensor();
+    // Air_Sensor();
 }

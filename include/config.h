@@ -31,7 +31,7 @@ float ch2o ; // 存储CH2O
 
 //时间触发器
 unsigned int Act_Time ; //传感器读取时间
-unsigned int Act_Time_Interval = 10000; //传感器读取时间间隔
+unsigned int Act_Time_Interval; //传感器读取时间间隔
 
 
 

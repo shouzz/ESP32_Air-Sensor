@@ -13,5 +13,5 @@ void loop()
   Serial_Control(); //串口控制
   Air_Sensor_loop(); //定时读传感器
   rtc_wdt_feed(); //喂狗
-  Serial.println("喂狗");
+  // Serial.println("喂狗");
 }

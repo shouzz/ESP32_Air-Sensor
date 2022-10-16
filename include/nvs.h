@@ -2,13 +2,13 @@ void Nvs_Device_Role_Set(String Role, String TaskNumber)
 {
     prefs.begin("storage");
     prefs.putString("Role", Role);
-    Serial.println("<" + String(TaskNumber) + "," + String(prefs.getString("Role", "0")) + "Role_Set>");
+    Serial.println("<" + String(TaskNumber) + "," + String(prefs.getString("Role", "0")) + ",Role_Set>");
     prefs.end();
 }
 void Nvs_Device_Role_Read(String TaskNumber)
 {
     prefs.begin("storage");
-    Serial.println("<" + String(TaskNumber) + "," + String(prefs.getString("Role", "0")) + "Role_Read>");
+    Serial.println("<" + String(TaskNumber) + "," + String(prefs.getString("Role", "0")) + ",Role_Read>");
     prefs.end();
 }
 

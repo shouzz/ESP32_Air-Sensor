@@ -6,16 +6,20 @@ void Serial_Control()
         String Str_cmd = SerialString.substring(1, SerialString.indexOf(','));
         String Str_TaskNumber = SerialString.substring(SerialString.indexOf(',') + 1, SerialString.lastIndexOf(','));
         String Str_data = SerialString.substring(SerialString.lastIndexOf(',') + 1, SerialString.lastIndexOf('>'));
-        if (Str_cmd = "Role_Set")
+        // Serial.println("Str_cmd:" + Str_cmd);
+        // Serial.println("Str_TaskNumber:" + Str_TaskNumber);
+        // Serial.println("Str_data:" + Str_data);
+        if (Str_cmd == "Role_Set")
         {
             Nvs_Device_Role_Set(Str_data, Str_TaskNumber);
         }
-        else if (Str_cmd = "Interval_Set")
+        else if (Str_cmd == "Interval_Set")
         {
             Nvs_Device_Interval_Set(Str_data.toInt(), Str_TaskNumber);
         }
-        else if (Str_cmd = "Role_Read")
+        else if (Str_cmd == "Role_Read")
         {
+            Nvs_Device_Role_Read(Str_TaskNumber);
         }
         else if (Str_cmd == "Get_Sensor")
         {
